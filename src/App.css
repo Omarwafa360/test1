@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+/* App.css - ستايل متكامل لكل الصفحات */
+
+body {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0 20px;
+  direction: rtl; /* لو كل المشروع عربي */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, h6 {
+  color: #d6336c; /* لون وردي جذاب */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+a {
+  color: #d6336c;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #d6336c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* التنقل (nav) */
+nav {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin: 20px 0;
+  background-color: #fff0f6;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(214, 51, 108, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* الجداول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 3px 10px rgba(214, 51, 108, 0.15);
+}
+
+table, th, td {
+  border: 2px solid #d6336c;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  background: #ffe6f0;
+  color: #b82e5a;
+}
+
+th {
+  background: #d6336c;
+  color: white;
+}
+
+/* الصور */
+img {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(214, 51, 108, 0.4);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* الفيديو */
+video {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(214, 51, 108, 0.4);
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* أزرار (لو عندك) */
+button {
+  background-color: #d6336c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a02346;
+}
+
+/* صناديق محتوى */
+.container {
+  background-color: #fff0f6;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 3px 15px rgba(214, 51, 108, 0.2);
+  margin-bottom: 30px;
 }
