@@ -17,7 +17,7 @@ function Omar() {
       </ul>
 
       <img
-        src="/Image/03.jpeg"
+        src={`${process.env.PUBLIC_URL}/Image/03.jpeg`}
         alt="صورة عمر"
         style={{ maxWidth: '100%', height: 'auto', marginTop: '20px', borderRadius: '8px' }}
       />
